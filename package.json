@@ -1,0 +1,11 @@
+{
+  "name": "gate-core",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "The record that keeps the First Gate of ORVION.",
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": { "node": ">=18" }
+}
