@@ -1,8 +1,8 @@
-import { sample } from './sample.js'
+import { sampleCached } from './cache.js'
 
 // Reads the crystal's true note.
 // Listeners: seal/threshold.js, beacon/pulse.js
 export function readResonance(crystal) {
-  const hz = sample(crystal)
+  const hz = sampleCached(crystal)
   return hz
 }
