@@ -1,0 +1,13 @@
+name: lumen
+on:
+  push:
+    branches: [lumen-rework]
+jobs:
+  lumen-unit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node --test test/lumen.test.js test/cache.test.js
