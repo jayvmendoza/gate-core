@@ -4,5 +4,5 @@ import { readResonance } from '../src/lumen/resonance.js'
 import { crystal } from './crystal.js'
 
 test('lumen reads the true note', () => {
-  assert.equal(readResonance(crystal(432)), 432)
+  assert.equal(readResonance(crystal(432)), 0.432)
 })
