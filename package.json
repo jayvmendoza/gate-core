@@ -5,7 +5,8 @@
   "type": "module",
   "description": "The record that keeps the First Gate of ORVION.",
   "scripts": {
-    "test": "node --test"
+    "test": "node --test",
+    "seal": "node tools/seal.mjs"
   },
   "engines": { "node": ">=18" }
 }
